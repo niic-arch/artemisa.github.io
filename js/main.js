@@ -7,15 +7,11 @@ $(document).ready(function() {
 	  $('#backimgs').cycleInit(data, 4000, 4000)
 	});
 	
-	setTimeout(function() {$('#startPage').css('opacity', 1)}, 1000);
-	
-	$('#startPage').on('click', function(){
-		$('#startPage').css('opacity', 0);
+	setTimeout(function() {
 		$('#mainPage').css('visibility', 'visible');
 		$('#mainPage').css('opacity', 1);
-		
-		setTimeout(function() {$('#backimgs').cycleStart()}, 2000);
-	})
+		setTimeout(function() {$('#backimgs').cycleStart()}, 2000);	      
+	}, 1000);
 })
 
 
