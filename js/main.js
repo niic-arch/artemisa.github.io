@@ -3,7 +3,7 @@
 
 
 $(document).ready(function() {
-	$.getJSON( "backgrounds.php", function(data) {
+	$.getJSON( "backgrounds.json", function(data) {
 	  $('#backimgs').cycleInit(data, 4000, 4000)
 	});
 	
